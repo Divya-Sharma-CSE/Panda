@@ -4,29 +4,87 @@
     box-sizing: border-box;
 }
 
+/* HOMEPAGE */
+
+
 .home{
-    background: rgba(255,255,255,0.15);
+    background: #EAF0FF;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    font-family:"Lato",sans-serif ;
+    flex-direction: column;
+    font-family:sans-serif ;
     font-size: 1.5rem;
+    color: rgb(6, 16, 62);
+    padding: 13rem 5vh;
+    gap:2rem;
+    
 } 
 
-.home h1{
-    font-family: "Raleway",sans-serif;
-    font-size:2rem;
-    margin-left: 3rem;
-    margin-top: 6rem;
+.home p{
+    max-width: 1000px;
 }
 
-.home {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
+.home .head{
+    font-family: "Montserrat",sans-serif;
+    font-size:4.5rem;
+    color: #5C4DFF;
+}
+
+@media (max-width: 600px) {
+    .home .head {
+        font-size:3rem;
+    }
+    .home p{
+        font-size:1rem;
+    }
+}
+
+
+
+.menu {
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  padding: 2.5rem 1rem;
-  width: 80%;
-  max-width: 700px;
-  margin: 2rem auto;
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(89, 84, 231, 0.39);
+  top: 2rem;
+  left:4rem;
+  position: fixed;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding:1rem;
+}
+
+.menu{
+    display: flex;
+    gap:2rem;
+    list-style: none;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color:#1e0a40;
+    font-family: "Noto Sans Bhaiksuki";
+}
+
+.logo{
+    font-family: "Chiron Sung HK";
+    margin-right:22rem;
+}
+
+.about{
+    margin-left:22rem;
+    font-family: "Noto Sans Bhaiksuki";
+}
+
+.circle{
+    width: 900px;
+    height: 900px;
+    border-radius:100%;
+    background-color:#5C4DFF;
+    position: absolute;
+    bottom: -500px;
+    right:-400px;
 }

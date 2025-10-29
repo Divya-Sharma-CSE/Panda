@@ -127,3 +127,51 @@
     gap: 1rem;
   }
 }   */
+
+/* REVOL */
+.revol{
+    background-color: #ede5db;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:1.5rem;
+    margin-bottom: 4rem;
+}
+
+.revol h1{
+    color:#2a4d88;
+    font-family:"Gelasio" ;
+    font-size: 3rem;
+    
+}
+
+.revol p{
+    color:rgb(26, 20, 44);
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.about_us {
+    font-family: "Parkinsans";
+    font-size: 1.5rem;
+    margin-top:1.2rem;
+    border-radius: 35px;
+    background-color: #d2b3db;
+    border:3px solid #d2b3db;
+    color:#865493;
+    padding:1rem;
+    text-align: center;
+    width: 200px;
+}
+
+.about_us:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    color:#d2b3db;
+    transition: 0.5s ease;
+}

@@ -8,28 +8,34 @@
 
 
 .home{
-    background: #EAF0FF;
+    background-image: url("bg1.webp");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family:sans-serif ;
+    font-family:"Playfair Display" ;
+    letter-spacing: 1px;
     font-size: 1.5rem;
-    color: rgb(6, 16, 62);
-    padding: 13rem 5vh;
+    color: #dfb6b2;
+    padding: 14rem 10vh;
     gap:2rem;
-    
+    overflow: hidden;
 } 
 
 .home p{
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .home .head{
-    font-family: "Montserrat",sans-serif;
-    font-size:4.5rem;
-    color: #5C4DFF;
+    font-family: "Monsterreat",sans-serif;
+    /*font-weight:800;*/
+    font-size:4.2rem;
+    color: #f8e9e1;
 }
-
+/*
 @media (max-width: 600px) {
     .home .head {
         font-size:3rem;
@@ -39,19 +45,17 @@
     }
 }
 
-
+*/
 
 .menu {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(89, 84, 231, 0.39);
-  top: 2rem;
-  left:4rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.39);
+  top: 1rem;
+  width: 100%;
   position: fixed;
-  justify-self: center;
   display: flex;
-  align-items: center;
   text-align: center;
   padding:1rem;
 }
@@ -62,6 +66,9 @@
     list-style: none;
 }
 
+.navbar .menu,.logo,.about{
+    justify-content: space-evenly;
+}
 
 .menu li a{
     text-decoration: none;
@@ -71,20 +78,8 @@
 
 .logo{
     font-family: "Chiron Sung HK";
-    margin-right:22rem;
 }
 
 .about{
-    margin-left:22rem;
     font-family: "Noto Sans Bhaiksuki";
-}
-
-.circle{
-    width: 900px;
-    height: 900px;
-    border-radius:100%;
-    background-color:#5C4DFF;
-    position: absolute;
-    bottom: -500px;
-    right:-400px;
 }

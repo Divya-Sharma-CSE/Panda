@@ -115,17 +115,10 @@
 }
 
 
-/* Responsive tweak 
+ Responsive tweak 
 @media (max-width: 768px) {
-  .navbar {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  .navbar ul {
-    gap: 1rem;
-  }
-}   */
+  
+}   
 
 /* REVOL */
 .second{
@@ -272,3 +265,5 @@
     font-size: 1.7rem;
     margin-bottom: 0.8rem;
 }
+
+

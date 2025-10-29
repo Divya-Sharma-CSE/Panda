@@ -66,10 +66,10 @@
 
 /* NAVIGATION BAR */
 .navbar {
-  background-color: rgba(249, 247, 240, 0.82);
+  background-color: rgba(251, 252, 253, 0.475);
   border-radius: 15px;
   backdrop-filter: blur(12px); 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.276);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.276);
   transform: translate(-50%,-15px);
   left:50%;
   top:0;
@@ -93,13 +93,13 @@
 
 .menu li a{
     text-decoration: none;
-    color:#3d84f5;
+    color:#22509a;
 }
 
 .menu li a:hover, .about:hover{
     text-shadow:
-    0 0 1rem #72a4e695,
-    0 0 0.5rem #68a1eb95;
+    0 0 1rem #0068f095,
+    0 0 0.5rem #0064e895;
 }
 
 .logo{
@@ -110,7 +110,7 @@
 }
 
 .about{
-    color:#458afa;
+    color:#235099;
     padding-top: 5px;
 }
 
@@ -223,7 +223,7 @@
     margin-bottom: 0.8rem;
 }
 
-.card-red{
+.card-red, .card-indigo{
     grid-column: span 2;
     max-height: 10rem;
 }
@@ -241,7 +241,12 @@
     gap:2rem;
 }
 
-.card-green, .card-cyan, .card-pink, .card-red, .card-orange{
+.card-green,
+ .card-cyan,
+  .card-pink,
+   .card-red,
+    .card-orange,
+    .card-indigo{
     border-radius: 22px;
     background-color: rgba(249, 235, 220, 0.5);
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
@@ -258,6 +263,12 @@
 
 .card-orange h1{
     color:orange;
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-indigo h1{
+    color:indigo;
     font-size: 1.7rem;
     margin-bottom: 0.8rem;
 }

@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="patient_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -20,13 +23,21 @@
     </section>
 
     <section class="right-side">
+        <p class="lang">English (US)</p>
         <section class="Sign">
-            <p class="lang">English (US)</p>
             <h1>Create Account</h1>
-            <button class="api">Sign up with Google</button>
-            <button class="api">Sign up with Facebook</button>
-            <p>~ Or ~</p>
-            
+            <div class="apis">
+                <button class="api">Sign up with Google</button>
+                <button class="api">Sign up with Facebook</button>
+            </div>
+                <p style="align-self: center; margin-bottom: 1rem;">~ Or ~</p>
+            <form style="margin-bottom: 1rem;">
+                <input type="text" id="fname" placeholder= "Name" name="fname"><br><br>
+                <input type="email" id="fname" placeholder= "E-mail" name="fname"><br><br>
+                <input type="password" id="fname" placeholder= "Password" name="fname"><br><br>
+            </form>
+            <button class="create" onclick="document.location='input.html'">Create Account</button>
+            <p style="margin-top: 1rem;">Already an account?<span> <a href="#">Log in</a></span></p>
         </section>
     </section>
 </section>

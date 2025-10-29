@@ -5,8 +5,6 @@
 }
 
 /* HOMEPAGE */
-
-
 .home{
     background-image: url("bg1.webp");
     background-color: rgba(0, 0, 0, 0.6);
@@ -35,6 +33,25 @@
     font-size:4.2rem;
     color: #f8e9e1;
 }
+
+.home .book{
+    font-family: "Parkinsans";
+    margin-top:2rem;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border:2px solid white;
+    color:white;
+    padding:1rem;
+    text-align: center;
+    width: 200px;
+}
+
+.book:hover{
+    opacity: 1;
+    background-color: white;
+    color:#60a1f8;
+    transition: 0.5s ease;
+}
 /*
 @media (max-width: 600px) {
     .home .head {
@@ -47,39 +64,66 @@
 
 */
 
-.menu {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.39);
-  top: 1rem;
-  width: 100%;
+/* NAVIGATION BAR */
+.navbar {
+  background-color: rgba(240, 255, 255,0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(12px); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.276);
+  transform: translate(-50%,-15px);
+  left:50%;
+  top:0;
+  width: 70%;
   position: fixed;
   display: flex;
-  text-align: center;
-  padding:1rem;
+  padding:1.5rem 0.5rem 1rem 0.5rem;
+  gap:8rem;
+  z-index: 10;
+  justify-content: space-evenly;
+  font-family: "Montserrat";
 }
 
 .menu{
     display: flex;
     gap:2rem;
     list-style: none;
+    padding-top:5px;
 }
 
-.navbar .menu,.logo,.about{
-    justify-content: space-evenly;
-}
 
 .menu li a{
     text-decoration: none;
-    color:#1e0a40;
-    font-family: "Noto Sans Bhaiksuki";
+    color:#c0d8ff;
+}
+
+.menu li a:hover, .about:hover{
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1.2rem #60a2f895,
+    0 0 0.5rem #60a2f895;
 }
 
 .logo{
     font-family: "Chiron Sung HK";
+    color: rgb(255, 255, 255);
+    font-weight: 800px;
+    font-size:1.5rem;
 }
 
 .about{
-    font-family: "Noto Sans Bhaiksuki";
+    color:#c0d8ff;
+    padding-top: 5px;
 }
+
+
+/* Responsive tweak 
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+  }
+}   */

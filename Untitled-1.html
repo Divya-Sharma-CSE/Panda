@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Portal | AI Disease Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>AI Health Portal</h2>
+    <button class="logout-btn">Logout</button>
+  </nav>
+
+  <section class="upload-section">
+    <div class="upload-container">
+      <h1>Upload Your Facial Image</h1>
+      <p>Our AI will analyze your facial data to assist doctors in early disease detection.</p>
+
+      <form id="uploadForm">
+        <div class="upload-box">
+          <input type="file" id="imageInput" accept="image/*" hidden>
+          <label for="imageInput" class="upload-label">
+            <img src="upload-icon.png" alt="Upload Icon">
+            <p>Click or drag your image here</p>
+          </label>
+        </div>
+        <button type="submit" class="analyze-btn">Submit for Analysis</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -31,12 +31,12 @@
                 <button class="api">Sign up with Facebook</button>
             </div>
                 <p style="align-self: center; margin-bottom: 1rem;">~ Or ~</p>
-            <form style="margin-bottom: 1rem;">
+            <form style="margin-bottom: 1rem;" class="signupForm">
                 <input type="text" id="fname" placeholder= "Name" name="fname"><br><br>
                 <input type="email" id="fname" placeholder= "E-mail" name="fname"><br><br>
                 <input type="password" id="fname" placeholder= "Password" name="fname"><br><br>
             </form>
-            <button class="create" onclick="document.location='input.html'">Create Account</button>
+            <button class="create" onclick="document.location='image_input.html'">Create Account</button>
             <p style="margin-top: 1rem;">Already an account?<span> <a href="#">Log in</a></span></p>
         </section>
     </section>
@@ -45,6 +45,14 @@
     <img src="Red_Illustration_Health_Fair_Flyer-removebg-preview.png" alt="Stethescope">
 </div>
 
+<script>
+  const form = document.getElementById('signupForm');
+  form.addEventListener('create', (e) => {
+    e.preventDefault(); // prevent actual form submission
+    // Simulate a success login
+    window.location.href = "upload.html"; // redirect to upload page
+  });
+</script>
 
 </body>
 </html>

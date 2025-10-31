@@ -44,9 +44,15 @@
     padding:1rem;
     text-align: center;
     width: 200px;
+
 }
 
-.book:hover{
+.book a{
+    text-decoration: none;
+    color:white;
+}
+
+.book a:hover, .book:hover{
     opacity: 1;
     background-color: white;
     color:#60a1f8;
@@ -267,3 +273,7 @@
 }
 
 
+.footer{
+    min-height: 55vh;
+    background-color: ;
+}
